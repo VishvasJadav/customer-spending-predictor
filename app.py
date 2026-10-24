@@ -12,12 +12,12 @@ with open("best_model/best_model_pipeline.pkl","rb") as file:
     best_pipeline = pickle.load(file)
 
 #load dataset
-df = pd.read_csv("datasets/cleaned_data.csv")
+df = pd.read_csv("Datasets/cleaned_data.csv")
 
 #sidebar
 with st.sidebar:
     st.title("Customer Spending Prediction")
-    st.image("assets/logo.png")
+    st.image("assets/images.png")
 #user input
 with st.container(border=True):
     col1,col2 = st.columns(2)
