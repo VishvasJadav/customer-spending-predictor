@@ -1,4 +1,8 @@
 # Customer Spending Predictor ML App
+## Streamlit app
+```
+https://customer-spending-predictor-x.streamlit.app/
+```
 
 ## Overview
 
