@@ -17,8 +17,8 @@ with open("best_model/best_model_pipeline.pkl","rb") as f:
     best_pipeline = pickle.load(f)
 
 #user input fields
-st.container(border = True)
-col1,col2= st.columns(2)
+with st.container(border = True):
+        col1,col2= st.columns(2)
 #load the dataset
 df = pd.read_csv("Datasets/cleaned_data.csv")
 
