@@ -60,14 +60,14 @@ cd customer-spending-predictor
 
 ### 2. Create a Virtual Environment (Optional)
 
-```bash
+```
 python -m venv myenv
 ```
 
 Activate the environment:
 
 **Windows**
-```bash
+```
 myenv\Scripts\activate
 ```
 
@@ -97,7 +97,7 @@ Use a suitable customer dataset containing the columns below. If a dataset has n
     Preferred_Category	    Categorical	        Electronics, Fashion, Home, or Beauty
     City_Tier	            Categorical	        Tier 1, Tier 2, or Tier 3
     Discount_Used	    Categorical	        Yes or No
-    Amount_Spent	    Numerical(target)	Customer spending amount to predic
+    Amount_Spent	    Numerical(target)	Customer spending amount to predict
 ```
 
 ## Author
