@@ -14,7 +14,7 @@ with st.sidebar:
 
 #load the model (model deserialization)
 with open("best_model/best_model_pipeline.pkl","rb") as f:
-    best_pipeline = pickle.load(f)
+    best_model_pipeline = pickle.load(f)
 
 #user input fields
 with st.container(border = True):
@@ -48,5 +48,5 @@ new_data = {
 new_data = pd.DataFrame(new_data,index=[0])
 
 if st.button("Predict spend"):
-    prediction = best_pipeline.predict(new_data)[0]
+    prediction = best_model_pipeline.predict(new_data)[0]
     st.success(f"Predicted Spend: {prediction[0]:.2f} Rs.")
